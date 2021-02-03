@@ -4,6 +4,9 @@ def say_hello():
     print("你好你好,我是say hello")
 
 
-# 文件被导入时, 能够直接执行的代码不需要被执行
-print("小明开发的模块")
-say_hello()
+# 如果直接执行模块:输出__main__
+if __name__ == "__main__":
+    print(__name__)
+    # 文件被导入时, 能够直接执行的代码不需要被执行
+    print("小明开发的模块")
+    say_hello()
