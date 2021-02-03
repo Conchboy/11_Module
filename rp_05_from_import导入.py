@@ -6,3 +6,5 @@ say_hello()
 
 wangcai = Dog()
 print(wangcai)
+
+
